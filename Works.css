@@ -161,22 +161,51 @@ a.prjo:before{
 a:hover:before{
 	width: 100%;
 }
-.burger{
+.burger {
 	display: none;
 	cursor: pointer;
-	height: 40px;
-	width: 40px;
-	top: -20px;
+	height: 36px;
+	width: 36px;
 	position: fixed;
-	max-height: fit-content;
+	top: 22px;
+	right: 24px;
+	z-index: 100;
+	background: transparent;
+	border: none;
+	box-shadow: none;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
 }
-.burger div{
-	width: 25px;
+
+.burger div {
+	width: 24px;
 	height: 3px;
-	 background-color:#f3f3f3;
-	margin: 5px;
-	transition: all 0.3s ease;
-	background: #f3f3f3;
+	background: #ededed;
+	margin: 5px auto;
+	border-radius: 2px;
+	transition: all 0.3s cubic-bezier(.68,-0.55,.27,1.55);
+	box-shadow: none;
+}
+
+.toggle .line1 {
+	transform: rotate(-45deg) translate(-4px, 6px);
+	background: #ededed;
+}
+
+.toggle .line2 {
+	opacity: 0;
+}
+
+.toggle .line3 {
+	transform: rotate(45deg) translate(-4px, -6px);
+	background: #ededed;
+}
+
+@media screen and (max-width: 1024px) {
+	.burger {
+		display: flex;
+	}
 }
 .wd{
 	margin-left:0.3%;
@@ -974,7 +1003,9 @@ footer > ul > li ul li a:hover{
 }
 
 .nav-links {
-    width: 35%;
+    width: 40%;
+margin-top: 40px;
+
 }
 }
 .ond {
