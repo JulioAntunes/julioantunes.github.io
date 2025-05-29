@@ -99,6 +99,7 @@ nav{
 	.conc{
 		width: 93%;
 		height: 5%;
+		display: none !important;
 	}
 }
 .nav-links{
@@ -1009,7 +1010,13 @@ margin-top: 40px;
 }
 }
 .ond {
-    overflow: hidden;
+	overflow: hidden;
+}
+
+@media (max-width: 600px) {
+	.ond {
+		display: none !important;
+	}
 }
 .footer-wave {
     filter: drop-shadow(0 -4px 9px #000000b0);
